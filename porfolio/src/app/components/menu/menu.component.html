@@ -1,1 +1,13 @@
-<p>menu works!</p>
+<mat-toolbar>
+    <a href="#home">
+        <div class="toolbar-title">Ghilès</div>
+        <div class="toolbar-title">BADJI</div>
+        <div class="toolbar-subtitle">Développeur full stack</div>
+    </a>
+</mat-toolbar>
+
+<mat-nav-list >
+    <a mat-list-item *ngFor="let link of links">
+        <span class="link-title">{{link.title}}</span>
+    </a>
+</mat-nav-list>

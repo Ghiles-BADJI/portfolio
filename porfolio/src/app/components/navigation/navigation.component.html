@@ -1,5 +1,13 @@
-<app-menu></app-menu>
+<mat-drawer-container class="drawer-container mat-app-background">
+    <mat-drawer class="drawer">
+        <app-menu
+        [links]="headings"
+        ></app-menu>
+    </mat-drawer>
 
-<app-toolbar></app-toolbar>
+    <mat-drawer-content class="drawer-content">
+    <app-toolbar class="toolbar"></app-toolbar>
 
-<app-content></app-content>
+    <app-content class="content"></app-content>
+</mat-drawer-content>
+</mat-drawer-container>

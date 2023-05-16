@@ -1,0 +1,35 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mat-toolbar {
+    height: 160px;
+    border-bottom: solid 1px #dadada;
+    padding: 30px 30px 40px;
+    display: block;
+    position: relative;
+    flex: 0;
+
+    a {
+        text-decoration: none;
+        padding: 10px 0 12px;
+        display: block;
+        color: inherit;
+    }
+
+    .toolbar-title {
+        font-size: 32px;
+        font-weight: 200;
+    }
+
+    .toolbar-subtitle {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.link-title {
+    color: black;
+}
