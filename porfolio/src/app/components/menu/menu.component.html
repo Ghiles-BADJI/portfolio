@@ -10,4 +10,8 @@
     <a mat-list-item *ngFor="let link of links">
         <span class="link-title">{{link.title}}</span>
     </a>
+    <a mat-list-item *ngFor="let export of exportLinks" >
+        <mat-icon>{{ export.icon }}</mat-icon>
+        <span>{{ export.title }}</span>
+    </a> 
 </mat-nav-list>

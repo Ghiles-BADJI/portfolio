@@ -1,1 +1,15 @@
-<p>projects works!</p>
+<section class="projects-section">
+    <mat-toolbar class="content-toolbar" color="primary">{{'project.title' | translate}}</mat-toolbar>
+
+    <div class="section-container">
+
+        <mat-card *ngFor="let item of items">
+            <img mat-card-image [src]="item.poster" alt="Photo of DZ DIALECT APP" height="240px">
+            <mat-card-content>
+                <div class="project-title-container">
+                    <div class="project-title">{{item.name}}</div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</section>

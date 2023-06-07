@@ -2,6 +2,7 @@ import { Component, Input, NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { CommonModule } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -13,7 +14,8 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatIconModule
   ]
 })
 
@@ -21,6 +23,7 @@ import { CommonModule } from '@angular/common';
 export class MenuComponent {
 
   @Input() links : any[] = [] ;
+  @Input() exportLinks : any[] = [];
   @Input() isHandset = false;
 
 

@@ -1,1 +1,26 @@
-<p>experience works!</p>
+<section class="experience-section">
+    <mat-toolbar class="content-toolbar" color="primary">EXPERIENCE</mat-toolbar>
+
+    <div class="section-container">
+        <mat-card *ngFor="let item of items" [ngClass]="{'handset': (isHandset$ | async)}">
+            <mat-card-title>
+                <div class="img-container">
+                    <img [src]="'assets/img/experience/' + item.logo + '.jpeg'"/>    
+                </div>
+                <div class="company-name" *ngIf="!(isHandset$ | async)">{{item.companyName}}</div>
+                <div class="job" *ngIf="!(isHandset$ | async)">{{item.job}}</div>
+            </mat-card-title>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div class="job" *ngIf="(isHandset$ | async)">{{item.job}}</div>
+                <div class="company-description"><em>{{item.companyDescription}}</em></div>
+                <ul>
+                    <li class="task" *ngFor="let task of item.tasks">{{task}}</li>
+                </ul>
+            </mat-card-content>
+            <mat-card-actions>
+                <span></span> 
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</section>

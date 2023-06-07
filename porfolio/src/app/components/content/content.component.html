@@ -1,1 +1,14 @@
-<p>content works!</p>
+<div class="container" #container>
+    <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+    <div scrollSpy class="scroll-container">
+        <app-about id="about" class="section"></app-about>
+        <app-contact id="contact" class="section"></app-contact>
+        <app-education id="education" class="section"></app-education>
+        <app-experience id="experience" class="section"></app-experience>
+        <app-home id="home" class="section"></app-home>
+        <app-projects id="projects" class="section"></app-projects>
+        <app-skills id="skills" class="section"></app-skills>
+    </div>
+</cdk-virtual-scroll-viewport>
+
+</div>
