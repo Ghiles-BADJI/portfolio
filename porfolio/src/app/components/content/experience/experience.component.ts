@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, map, shareReplay } from 'rxjs';
 import {MatDividerModule} from '@angular/material/divider';
-
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
@@ -18,6 +18,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatCardModule,
     CommonModule,
     MatDividerModule,
+    TranslateModule
   ]
 })
 export class ExperienceComponent {
@@ -33,8 +34,8 @@ export class ExperienceComponent {
     {
       companyName: 'Altex',
       logo: 'altex',
-      job: 'experience.job.agicap',
-      companyDescription: 'experience.job.agicap.description',
+      job: 'experience.job.altex',
+      companyDescription: 'experience.job.altex.description',
       tasks: [
         'experience.job.agicap.task1',
         'experience.job.agicap.task2',
@@ -49,7 +50,7 @@ export class ExperienceComponent {
       dates: {start: '1638179500000', end: '1661935900000'},
       location: 'Lyon'
     }
-  ]
+  ];
 
 
   constructor(private readonly breakpointObserver: BreakpointObserver) { }
