@@ -1,23 +1,19 @@
 <section class="about-section">
-    <mat-toolbar class="content-toolbar" color="primary">A PROPOS</mat-toolbar>
+    <mat-toolbar class="content-toolbar" color="primary">{{'about'| translate}}</mat-toolbar>
     <div class="section-container flow-text">
         <blockquote>
-            <h2>Développeur full stack axé sur la mission et passionné par la conception, la collaboration et
-                l'enseignement de l'interface utilisateur réfléchie.</h2>
+            <h2>{{'about.title'| translate}}</h2>
         </blockquote>
 
-        <p class="about-paragraph first">J'ai toujours recherché des opportunités et des défis qui me tiennent à cœur.
-            Bien que mon parcours professionnel ait pris de nombreuses tournures - du salarié d'une petite structure au
-            propriétaire et entrepreneur d'une micro entreprise - je n'ai jamais cessé d'engager ma passion pour aider
-            les autres et résoudre des problèmes.</p>
+        <p class="about-paragraph first">{{'about.paragraph1'| translate}}</p>
 
-        <p class="about-paragraph second">En tant qu’ingénieur logiciel, j’aime utiliser mon souci obsessionnel du
-            détail, mon amour sans équivoque pour la réalisation d’objets et mon éthique de travail axée sur la mission
-            pour changer littéralement le monde. C’est pourquoi je suis enthousiaste à l’idée de créer un impact
-            important dans une entreprise à forte croissance.</p>
+        <p class="about-paragraph second">{{'about.paragraph2'| translate}}</p>
 
         <p class="about-paragraph">
-            <strong>Focus actuel</strong> : 
+            <strong>{{'about.current-focus'| translate}}</strong> : 
+            <a [href]="link1" target="_blank">{{'about.link1'| translate}}</a> // 
+            <a [href]="link2" target="_blank">{{'about.link2'| translate}}</a> // 
+            <a [href]="link3" target="_blank">{{'about.link3'| translate}}</a>
         </p>    
     </div>
 </section>
