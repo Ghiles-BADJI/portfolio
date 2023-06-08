@@ -1,8 +1,11 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
+import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
+import { TranslateModule } from '@ngx-translate/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -15,8 +18,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-
-    CommonModule
+    CommonModule,
+    TranslateModule,
+    HttpClientModule
   ]
 })
 export class ContactComponent {
@@ -28,6 +32,5 @@ export class ContactComponent {
     {iconName: 'github', link: 'https://github.com/Ghiles-BADJI'},
 
   ]
-
 
 }
