@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationComponent } from '../../navigation/navigation.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,7 @@ import { NavigationComponent } from '../../navigation/navigation.component';
   standalone: true,
   imports: [
     NavigationComponent,
+    TranslateModule
   ]
 })
 export class HomeComponent {
