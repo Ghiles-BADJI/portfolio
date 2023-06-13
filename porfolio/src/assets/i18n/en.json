@@ -26,5 +26,11 @@
     "home.heading-underlined": "make a difference",
     "projects.description.dz-dialect-app": "Algerian dialectology learning app for beginners",
     "projects.description.title": "Accomplishments",
-    "project.title": "Projects"
+    "project.title": "Projects",
+    "skills.back": "Back-end",
+    "skills.build": "Build",
+    "skills.css": "CSS",
+    "skills.front": "Front-end",
+    "skills.other": "Other",
+    "skills": "skills"
 }

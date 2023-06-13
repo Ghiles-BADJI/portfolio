@@ -4,7 +4,7 @@ section{
     position: relative;
 }
 
-.mat-toolbar-single-row.content-toolbar{
+.mat-mdc-toolbar-single-row.content-toolbar{
     height: 108px;
     font-size: 2.92rem;
     line-height: 3.212rem;
@@ -16,7 +16,7 @@ section{
     text-transform: uppercase;
 }
 
-.grid-picker .mat-menu-content:not(:empty) {
+.grid-picker .mat-mdc-menu-content:not(:empty) {
     padding: 8px;
 }
 
@@ -26,7 +26,7 @@ section{
 
 @media only screen and (max-width: 991px)
 {
-    .mat-toolbar-single-row.content-toolbar{
+    .mat-mdc-toolbar-single-row.content-toolbar{
         padding: 10px 15px;
     }
 }
