@@ -3,6 +3,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-projects',
@@ -13,7 +15,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     MatToolbarModule,
     MatCardModule,
     CommonModule,
-    TranslateModule
+    TranslateModule,
+    MatIconModule,
+    MatButtonModule
   ]
 })
 export class ProjectsComponent {
