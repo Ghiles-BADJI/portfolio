@@ -27,5 +27,5 @@ export class MenuComponent {
   @Input() isHandset = false;
 
 
-
+  
 }
