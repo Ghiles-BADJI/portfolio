@@ -5,6 +5,8 @@ import { ContentComponent } from '../content/content.component';
 import { Observable, map, pipe } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -17,8 +19,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MenuComponent,
     ToolbarComponent,
     ContentComponent,
-    
-    MatSidenavModule
+    MatSidenavModule,
+    CommonModule
   ]
 })
 export class NavigationComponent implements OnInit{

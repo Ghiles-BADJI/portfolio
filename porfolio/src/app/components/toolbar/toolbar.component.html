@@ -8,9 +8,17 @@
     </a>
 
     <span class="title-container">
-        <p class="title">Ghilès BADJI</p>
-        <p class="subtitle"></p>
+        <div class="title">Ghilès BADJI</div>
+        <div class="subtitle">{{'job'| translate}}</div>
     </span>
+
+    <a mat-icon-button aria-label="Language selector" [matMenuTriggerFor]="langMenu">
+        <mat-icon>language</mat-icon>
+    </a>
+
+    <a mat-icon-button aria-label="Theme selector" [matMenuTriggerFor]="themeMenu">
+        <mat-icon>color_lens</mat-icon>
+    </a>
 </mat-toolbar>
 
 <mat-menu #langMenu="matMenu" [class]="'grid-picker'">

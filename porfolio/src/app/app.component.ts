@@ -13,15 +13,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  standalone: true,
-  imports: [
-    NavigationComponent,
-    AppModule,
-    HttpClientModule,
-    MatIconModule,
-    CommonModule
-    
-  ],
+  standalone: false,
   providers: [
     HttpClient
   ]

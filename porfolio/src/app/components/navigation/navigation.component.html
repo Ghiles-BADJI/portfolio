@@ -1,13 +1,13 @@
 <mat-drawer-container class="drawer-container mat-app-background">
     <mat-drawer class="drawer">
         <app-menu
-        [links]="headings"
+        [links]="headings" [isHandset]="isHandset$| async"
         ></app-menu>
     </mat-drawer>
 
     <mat-drawer-content class="drawer-content">
     <app-toolbar class="toolbar"></app-toolbar>
 
-    <app-content class="content"></app-content>
+    <app-content class="content" [isHandset]="isHandset$| async"></app-content>
 </mat-drawer-content>
 </mat-drawer-container>

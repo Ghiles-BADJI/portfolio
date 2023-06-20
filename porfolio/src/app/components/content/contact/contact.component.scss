@@ -10,7 +10,7 @@ $contact-bloc-height: 55.5px;
         display: flex;
         text-align: center;
 
-        .mat-mini-fab{
+        .mat-mdc-mini-fab{
             height: $contact-bloc-height;
             width: $contact-bloc-height;
             color: white;
@@ -23,7 +23,7 @@ $contact-bloc-height: 55.5px;
         &.handset{
             flex-direction: column;
 
-            .mat-mini-fab{
+            .mat-mdc-mini-fab{
                 margin: 0 auto;
             }
         }
@@ -31,7 +31,7 @@ $contact-bloc-height: 55.5px;
         &:not(.handset){
             flex-direction: row;
 
-            .mat-mini-fab{
+            .mat-mdc-mini-fab{
                 margin-right: 20px;
             }
         }
@@ -40,11 +40,11 @@ $contact-bloc-height: 55.5px;
     
 }
 
-@mixin contact-widget($theme){
-    $color: mat.get-color-from-palette($theme, 500);
+
+    
 
     .contact-link{
-        color: $color;
+        color: #3f51b5;
     }
 
     .contact-link{
@@ -56,10 +56,10 @@ $contact-bloc-height: 55.5px;
     }
 
     .contact-link:hover{
-        border-bottom: 3px solid $color;
+        border-bottom: 3px solid #3f51b5;
         transition: 0.4s all;
         -moz-transition: 0.4s all;
         -webkit-transition: 0.4s all;
         -webkit-tap-highlight-color: transparent;
     }
-}
+

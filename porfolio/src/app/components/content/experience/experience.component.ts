@@ -6,6 +6,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, map, shareReplay } from 'rxjs';
 import {MatDividerModule} from '@angular/material/divider';
 import { TranslateModule } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/services/languauge/language.service';
 
 
 @Component({
@@ -52,8 +53,10 @@ export class ExperienceComponent {
     }
   ];
 
+  locale: Observable<'fr-FR'|'en-US'> = this.langSrv.getLanguage(); 
 
-  constructor(private readonly breakpointObserver: BreakpointObserver) { }
+
+  constructor(private readonly breakpointObserver: BreakpointObserver, private readonly langSrv: LanguageService) { }
 
 
 }

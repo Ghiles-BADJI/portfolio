@@ -4,6 +4,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import { ThemeSelectorComponent } from '../theme-selector/theme-selector.component';
 import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
@@ -16,7 +17,8 @@ import { LanguageSelectorComponent } from '../language-selector/language-selecto
     LanguageSelectorComponent,
     MatToolbarModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    TranslateModule
   ]
 })
 export class ToolbarComponent {

@@ -6,7 +6,7 @@
         justify-content: center;
         flex-direction: column;
     
-        .mat-card{
+        .mat-mdc-card{
             padding: 20px;
             margin-bottom: 40px;
             
@@ -15,19 +15,19 @@
                 margin: 0 auto 40px auto;
             }
     
-            .mat-card-title{
+            .mat-mdc-card-title{
                 text-transform: uppercase;
                 margin-bottom: 24px;
                 font-size: 24px;
                 font-weight: 300;
             }
     
-            .mat-card-subtitle{
+            .mat-mdc-card-subtitle{
                 font-size: 16px;
                 font-weight: normal;
             }
     
-            .mat-card-content li{
+            .mat-mdc-card-content li{
                 font-size: 14px;
                 font-weight: normal;
                 line-height: 200%;
@@ -43,11 +43,11 @@
     $accent-color: mat.get-color-from-palette($accent, 500);
 
     .education-section{
-        .mat-card-title{
+        .mat-mdc-card-title{
             color: $primary-color;
         }
     
-        .mat-card-subtitle{
+        .mat-mdc-card-subtitle{
             color: $accent-color;
         }
     }
