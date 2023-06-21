@@ -2,7 +2,7 @@
 # SETUP STAGE
 # ==============================================================================
 
-FROM node:16-alpine3.14 AS setup
+FROM node:18-alpine3.17 AS setup
 
 # Create and change to the app directory.
 WORKDIR /src
@@ -19,7 +19,7 @@ RUN npm ci
 # BUILD STAGE
 # ==============================================================================
 
-FROM node:16-alpine3.14 AS build
+FROM node:18-alpine3.17 AS build
 
 # Create and change to the app directory.
 WORKDIR /src
