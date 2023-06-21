@@ -6,12 +6,12 @@ import { MatIconModule, MatIconRegistry } from "@angular/material/icon";
 import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { CommonModule } from "@angular/common";
-import { NavigationComponent } from "./components/navigation/navigation.component";
 import { BrowserModule, DomSanitizer } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 import { LanguageService } from "./services/languauge/language.service";
+import { NavigationComponent } from "./components/navigation/navigation.component";
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -23,7 +23,6 @@ export function createTranslateLoader(http: HttpClient) {
     imports: [
         BrowserAnimationsModule,
         BrowserModule,
-        NavigationComponent,
         HttpClientModule,
         MatIconModule,
         CommonModule,
@@ -37,7 +36,8 @@ export function createTranslateLoader(http: HttpClient) {
                 deps: [HttpClient]
             },
             defaultLanguage: 'fr'
-        })
+        }),
+        NavigationComponent
     ],
 
     providers: [

@@ -1,23 +1,11 @@
 import { Component } from '@angular/core';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { AppModule } from './app.module';
-import { MatIcon, MatIconModule, MatIconRegistry } from '@angular/material/icon';
-import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
-
-
-
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  standalone: false,
-  providers: [
-    HttpClient
-  ]
-
 })
 export class AppComponent {
   title = 'porfolio';
