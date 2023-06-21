@@ -1,6 +1,10 @@
 {
   "name": "porfolio",
   "version": "0.0.0",
+  "engines": {
+    "node": "16.16.0",
+    "npm": "8.19.1"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
