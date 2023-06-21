@@ -54,7 +54,7 @@ RUN \
   mkdir -p /etc/nginx/conf.d
 
 COPY ./default.conf /etc/nginx/conf.d/
-COPY --from=optimization /src/dist/portfolio /usr/share/nginx/html
+COPY --from=optimization /src/dist/porfolio /usr/share/nginx/html
 
 EXPOSE 80
 
