@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuComponent } from '../menu/menu.component';
-import { ToolbarComponent } from '../toolbar/toolbar.component';
-import { ContentComponent } from '../content/content.component';
-import { Observable, map, pipe } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { CommonModule } from '@angular/common';
+import { MenuComponent } from 'src/app/components/menu/menu.component';
+import { ToolbarComponent } from 'src/app/components/toolbar/toolbar.component';
+import { ContentComponent } from 'src/app/components/content/content.component';
 
 
 
