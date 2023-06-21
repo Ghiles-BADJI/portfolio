@@ -38,7 +38,12 @@ export class NavigationComponent implements OnInit{
       { title: 'contact', icon: 'mail', anchor: 'contact', color: '#795548'}
     ];
 
-    constructor(private readonly breakpointObserver: BreakpointObserver) {}
+    exportHeadings = [
+      { title: 'resume', icon: 'description', link: 'assets/resume.pdf'}
+    ];
+
+
+    constructor(private readonly breakpointObserver: BreakpointObserver) {} 
 
     ngOnInit(): void {
       

@@ -1,20 +1,21 @@
 @import '@angular/material/theming';
 
-.drawer-container {
+.sidenav-container {
   height: 100%;
 }
 
-.drawer {
+.sidenav {
   width: 200px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
-.drawer-content{
+.sidenav-content{
   background: url('/assets/img/bg.png') repeat;
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+
 }
 
 .toolbar{

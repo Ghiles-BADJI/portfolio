@@ -1,6 +1,6 @@
 <mat-toolbar *ngIf="!isHandset">  
     <a href="#home">
-        <div class="toolbar-title">Lounès</div>
+        <div class="toolbar-title">Ghilès</div>
         <div class="toolbar-title">Badji</div>
         <div class="toolbar-subtitle">{{'job' |translate}}</div>
     </a>
@@ -13,13 +13,13 @@
         (click)="scrollTo(link.anchor)">
         <div class="item-border" *ngIf="(selected| async) === link.anchor"
             [style.background-color]="link.color"></div>
-        <mat-icon [style.color]="link.color">{{ link.icon }}</mat-icon>
-        <span>{{ link.title| translate }}</span>
+        <mat-icon matListItemIcon [style.color]="link.color">{{ link.icon }}</mat-icon>
+        <span matListItemTitle>{{ link.title| translate }}</span>
     </a>      
     <a mat-list-item *ngFor="let export of exportLinks" 
         [href]="export.link" target="_blank">
-        <mat-icon>{{ export.icon }}</mat-icon>
-        <span>{{ export.title| translate }}</span>
+        <mat-icon matListItemIcon>{{ export.icon }}</mat-icon>
+        <span matListItemTitle>{{ export.title| translate }}</span>
     </a>  
     
     <a mat-list-item class="bottom-list-item" *ngIf="!isHandset">

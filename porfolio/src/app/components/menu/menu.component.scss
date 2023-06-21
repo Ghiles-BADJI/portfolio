@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.mat-mdc-toolbar {
+.mat-toolbar {
     height: 160px;
     border-bottom: solid 1px #dadada;
     padding: 30px 30px 40px;
@@ -30,14 +30,14 @@
     }
 }
 
-.mat-nav-list{
+.mat-mdc-nav-list {
     padding-top: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
     flex: 0 auto;
 
-    .mat-list-item {
+    .mat-mdc-list-item {
         display: flex;
         flex-direction: row;
         height: 24px;
@@ -45,8 +45,9 @@
         text-decoration: none;
         color: inherit;
         font-weight: 300;
+        box-sizing: content-box;
 
-        .item-border{
+        .item-border {
             width: 3px;
             height: 46px;
             position: absolute;
@@ -54,18 +55,18 @@
             top: -10px;
         }
 
-        &.selected{
-            span{
+        &.selected {
+            span {
                 font-weight: 500;
             }
         }
 
-        &.bottom-list-item{
+        &.bottom-list-item {
             position: absolute;
             bottom: 0;
 
             ::ng-deep {
-                .mat-list-item-content{
+                .mat-list-item-content {
                     width: 100%;
                     display: flex;
                     flex-direction: row;
@@ -73,41 +74,41 @@
                 }
             }
 
-            .mat-icon{
+            .mat-icon {
                 padding: 0 8px;
             }
 
-            div:last-of-type{
+            div:last-of-type {
                 margin-right: 8px;
             }
         }
 
-        &.bottom-list-item:hover{
+        &.bottom-list-item:hover {
             background: none;
         }
 
         ::ng-deep {
-            .mat-list-item-content{
+            .mat-list-item-content {
                 padding: 0;
             }
 
-            .mat-list-item-ripple{
+            .mat-list-item-ripple {
                 display: none;
             }
         }
-    
-        .mat-icon{
+
+        .mat-icon {
             padding: 0 15px;
             color: inherit;
         }
-    
+
         span {
             height: 24px;
             line-height: 24px;
             text-transform: capitalize;
             color: inherit;
         }
-    }   
+    }
 }
 
 .link-title {
