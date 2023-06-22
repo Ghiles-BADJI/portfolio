@@ -7,6 +7,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import { Router } from '@angular/router';
+import { ScrollSpyDirective } from '../../directives/scroll-spy.directive';
 
 
 @Component({
@@ -16,6 +18,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
+    ScrollSpyDirective,
     AboutComponent,
     ContactComponent,
     EducationComponent,
@@ -30,6 +33,13 @@ export class ContentComponent {
 
   currentFragment = '';
   @Input() isHandset = false;
+
+  constructor(private readonly router: Router) {}
+
+  onSectionChange(fragment: any): void {
+    this.currentFragment = fragment;
+    this.router.navigate(['/'], {fragment});
+  }
 
   items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
 }

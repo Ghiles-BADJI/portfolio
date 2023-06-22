@@ -45,7 +45,7 @@ export class MenuComponent {
 
   @Output() menuClosed: EventEmitter<void> = new EventEmitter<void>();
 
-  selected: Observable<any>;
+  selected: Observable<string | null>;
 
   constructor(private readonly route: ActivatedRoute) { 
     this.selected = this.route.fragment;
@@ -63,6 +63,7 @@ export class MenuComponent {
     if (!!element) {
       element.scrollIntoView({behavior: 'smooth'});
     }
+    console.log('selected', this.selected)
   }
 
   

@@ -1,6 +1,10 @@
 <div class="container" #container>
-    <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
-    <div scrollSpy class="scroll-container">
+        <div scroll-spy class="scroll-container"
+        [spiedTags]="['APP-HOME', 'APP-ABOUT', 'APP-EXPERIENCE', 'APP-PROJECTS', 'APP-SKILLS', 'APP-AWARDS', 'APP-EDUCATION', 'APP-CONTACT']"   
+        (sectionChange)="onSectionChange($event)"
+        [style.height.px]="container.clientHeight"
+        [style.width.px]="container.clientWidth"
+        >
         <app-home id="home" class="section"></app-home>
     
         <app-about id="about" class="section"></app-about>
@@ -14,7 +18,5 @@
         <app-education id="education" class="section"></app-education>
         
         <app-contact id="contact" class="section" [isHandset]="isHandset"></app-contact>
-    </div>
-</cdk-virtual-scroll-viewport>
-
+</div>
 </div>
