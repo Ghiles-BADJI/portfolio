@@ -64,6 +64,7 @@
         &.bottom-list-item {
             position: absolute;
             bottom: 0;
+            
 
             ::ng-deep {
                 .mat-list-item-content {
@@ -100,6 +101,8 @@
         .mat-icon {
             padding: 0 15px;
             color: inherit;
+            margin-right: 0px;
+            margin-left: 0px;
         }
 
         span {
