@@ -8,7 +8,6 @@ import { Observable } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
-import { ThemeSelectorComponent } from '../theme-selector/theme-selector.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -29,7 +28,6 @@ import { HttpClientModule } from '@angular/common/http';
     TranslateModule,
     CommonModule,
     LanguageSelectorComponent,
-    ThemeSelectorComponent,
     RouterModule,
     HttpClientModule,
     

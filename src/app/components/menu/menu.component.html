@@ -28,17 +28,8 @@
             [matMenuTriggerFor]="langMenu">
             <mat-icon>language</mat-icon>
         </div>
-        <div mat-icon-button aria-label="Theme selector"
-            [matTooltip]="'Click to select a theme'" [matTooltipPosition]="'right'" 
-            [matMenuTriggerFor]="themeMenu">
-            <mat-icon>color_lens</mat-icon>
-        </div>
     </a>
 </mat-nav-list>
-
-<mat-menu #themeMenu="matMenu" [class]="'grid-picker'" [xPosition]="'after'" [yPosition]="'above'">
-    <app-theme-selector></app-theme-selector>
-</mat-menu>
 
 <mat-menu #langMenu="matMenu" [class]="'grid-picker'" [xPosition]="'after'" [yPosition]="'above'">
     <app-language-selector></app-language-selector>
