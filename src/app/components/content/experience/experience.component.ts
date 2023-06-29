@@ -41,12 +41,6 @@ export class ExperienceComponent {
         'experience.job.altex.task1',
         'experience.job.altex.task2',
         'experience.job.altex.task3',
-        'experience.job.altex.task4',
-        'experience.job.altex.task5',
-        'experience.job.altex.task6',
-        'experience.job.altex.task7',
-        'experience.job.altex.task8',
-        'experience.job.altex.task9',
       ],
       dates: {start: '1638179500000', end: '1661935900000'},
       location: 'Lyon'
