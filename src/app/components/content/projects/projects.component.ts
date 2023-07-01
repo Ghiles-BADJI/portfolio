@@ -26,9 +26,17 @@ export class ProjectsComponent {
     {
       poster: 'assets/img/projects/dz-dialect-app.png',
       name: 'DZ Dialect App',
-      description: ['Angular 14', 'Material', 'Ngrx', 'PWA'],
+      description: ['Angular 14', 'Material', 'PWA'],
       descriptionTxt: 'projects.description.dz-dialect-app',
       links: {online: 'https://dz-dialect.bdsapp.fr', github: 'https://www.github.com/badjilounes/dz-dialect-app.git'}
+    },
+
+    {
+      poster: 'assets/img/projects/slack.png',
+      name: 'Slack App',
+      description: ['Angular 14', 'Material', 'Ngrx', 'PWA'],
+      descriptionTxt: 'projects.description.slack',
+      links: {online: 'https://slack.gh-it.fr', github: 'https://github.com/Ghiles-BADJI/Slack-app'}
     }
 
   ]
