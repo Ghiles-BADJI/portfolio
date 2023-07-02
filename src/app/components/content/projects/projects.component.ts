@@ -34,9 +34,17 @@ export class ProjectsComponent {
     {
       poster: 'assets/img/projects/slack.png',
       name: 'Slack App',
-      description: ['Angular 14', 'Material', 'Ngrx', 'PWA'],
+      description: ['Angular 14', 'Material', 'PWA'],
       descriptionTxt: 'projects.description.slack',
       links: {online: 'https://slack.gh-it.fr', github: 'https://github.com/Ghiles-BADJI/Slack-app'}
+    },
+
+    {
+      poster: 'assets/img/projects/facebook.png',
+      name: 'Facebook',
+      description: ['Angular 14', 'Material', 'PWA'],
+      descriptionTxt: 'projects.description.facebook',
+      links: {online: 'https://facebook.gh-it.fr', github: 'https://github.com/Ghiles-BADJI/login'}
     }
 
   ]
