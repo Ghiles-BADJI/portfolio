@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, isDevMode } from "@angular/core";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -12,6 +12,7 @@ import localeFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 import { LanguageService } from "./services/languauge/language.service";
 import { NavigationComponent } from "./components/navigation/navigation.component";
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -37,7 +38,13 @@ export function createTranslateLoader(http: HttpClient) {
             },
             defaultLanguage: 'fr'
         }),
-        NavigationComponent
+        NavigationComponent,
+        ServiceWorkerModule.register('ngsw-worker.js', {
+          enabled: !isDevMode(),
+          // Register the ServiceWorker as soon as the application is stable
+          // or after 30 seconds (whichever comes first).
+          registrationStrategy: 'registerWhenStable:30000'
+        })
     ],
 
     providers: [
