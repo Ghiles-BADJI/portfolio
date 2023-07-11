@@ -30,6 +30,7 @@ export class ContactComponent {
   contacts = [
     {iconName: 'mail', link: 'ghiles.badji@gmail.com', mail: true},
     {iconName: 'github', link: 'https://github.com/Ghiles-BADJI'},
+    {iconName: 'linkedin', link: 'https://www.linkedin.com/in/ghil%C3%A8s-badji-237229283/'},
 
   ]
 

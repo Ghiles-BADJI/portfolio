@@ -25,10 +25,10 @@ export class ProjectsComponent {
   items = [
     {
       poster: 'assets/img/projects/dz-dialect-app.png',
-      name: 'DZ Dialect App',
+      name: 'DZ Dialect Admin',
       description: ['Angular 14', 'Material', 'PWA'],
       descriptionTxt: 'projects.description.dz-dialect-app',
-      links: {online: 'https://dz-dialect.bdsapp.fr', github: 'https://www.github.com/badjilounes/dz-dialect-app.git'}
+      links: {online: 'https://dz-dialect.admin.bdsapp.fr/', github: 'https://github.com/Ghiles-BADJI/dz-dialect-sentence-api'}
     },
 
     {
