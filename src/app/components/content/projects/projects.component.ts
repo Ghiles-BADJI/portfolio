@@ -32,7 +32,7 @@ export class ProjectsComponent {
     },
 
     {
-      poster: 'assets/img/projects/slack.png',
+      poster: 'assets/img/projects/slack2.png',
       name: 'Slack App',
       description: ['Angular 14', 'Material', 'PWA'],
       descriptionTxt: 'projects.description.slack',
@@ -40,7 +40,7 @@ export class ProjectsComponent {
     },
 
     {
-      poster: 'assets/img/projects/facebook.png',
+      poster: 'assets/img/projects/facebook2.png',
       name: 'Facebook',
       description: ['Angular 14', 'Material', 'PWA'],
       descriptionTxt: 'projects.description.facebook',
