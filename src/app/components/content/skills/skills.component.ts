@@ -43,15 +43,6 @@ export class SkillsComponent {
       ]
     },
     {
-      name: 'skills.build',
-      skills: [
-        {img: 'webpack', name: 'Webpack'},
-        {img: 'gulp', name: 'Gulp'},
-        {img: 'grunt', name: 'Grunt'},
-        {img: 'bower', name: 'Bower'},
-      ]
-    },
-    {
       name: 'skills.other',
       skills: [
         {img: 'github', name: 'GitHub'},
