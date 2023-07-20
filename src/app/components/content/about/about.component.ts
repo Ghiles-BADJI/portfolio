@@ -18,4 +18,5 @@ export class AboutComponent {
   link2 = 'https://www.angular.io/';
   link3 = 'https://mrmrs.cc/writing/scalable-css/';
 
+  
 }
